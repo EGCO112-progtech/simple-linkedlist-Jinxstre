@@ -1,8 +1,9 @@
+DEPS = SMTH
 compile: main.c 
-	 gcc main.c -o ming
+	 gcc main.c -o $(DEPS)
 
-run: ming
-	 ./ming
+run: $(DEPS)
+	 ./$(DEPS)
 
-clean: ming
-	 rm ming
+clean: $(DEPS)
+	 rm $(DEPS)
